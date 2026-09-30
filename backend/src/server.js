@@ -27,7 +27,7 @@ app.use(cookieParser());
 
 const io = new SocketIOServer(server, {
   cors: {
-    origin: env.CLIENT_ORIGIN,
+    origin: true,
     credentials: true,
     methods: ['GET', 'POST']
   }
